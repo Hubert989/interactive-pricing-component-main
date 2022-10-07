@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Simple, traffic-based pricing</h3>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="main">
+      <div class="top">
+        <div class="cos3">
+          <p class="page_views">100K</p>
+          <p class="page">pageviews</p>
+        </div>
+        <div class="cos">
+          <p class="price">$16.00</p>
+          <span> / month</span>
+        </div>
+      </div>
+      <div class="progress_bar">
+        <input type="range" min="1" max="5" value="3" oninput="updatePrice()" class="slider_range" id="myRange">
+      </div>
+      <div class="cos2">
+        <p class="paragraph">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" onclick="updatePrice()">
+          <span class="slider"></span>
+        </label>
+        <p class="paragraph">Yearly Billing</p>
+        <p class="para2">25% discount</p>
+      </div>
+      <div class="bottom">
+        <div class="report">
+          <div class="detail">
+            <img src="./images/icon-check.svg">
+            <p>Unlimited websites</p>
+          </div>
+          <div class="detail">
+            <img src="./images/icon-check.svg">
+            <p>100% data ownership</p>
+          </div>
+          <div class="detail">
+            <img src="./images/icon-check.svg">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <div class="btn">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
